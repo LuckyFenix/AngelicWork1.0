@@ -123,6 +123,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="WARN_ABOUT_CRLF" value="false" />
   </component>
   <component name="GithubProjectSettings">
     <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_USER" value="LuckyFenix" />
@@ -590,17 +591,21 @@
       <workItem from="1402532489618" duration="7000" />
       <workItem from="1402532497451" duration="16433000" />
       <workItem from="1402607718563" duration="363000" />
-      <workItem from="1402608091493" duration="1072000" />
+      <workItem from="1402608091493" duration="1109000" />
     </task>
     <task id="LOCAL-00001" summary="Переименование">
       <created>1402609114476</created>
       <updated>1402609114476</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Переименование">
+      <created>1402609191640</created>
+      <updated>1402609191640</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17937000" />
+    <option name="totallyTimeSpent" value="17974000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1064" extended-state="6" />
