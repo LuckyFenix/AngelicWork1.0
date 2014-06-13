@@ -157,9 +157,7 @@ public class Invoice extends RPanel
         tableFields = new String[0][0];
         ResultSet resultSet;
 
-
-        int count = tableModel.getRowCount();
-        for(int i = 0; i < count;)
+        for(int i = 0; i < tableModel.getRowCount();)
         {
             tableModel.removeRow(i);
         }

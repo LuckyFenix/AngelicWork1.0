@@ -131,14 +131,14 @@ public class InvoiceNewNomenclatureDialog extends RDialog
 
     private void initTable()
     {
-        for (int i = 0; i < table.getRowCount(); i++)
+        for (int i = 0; i < table.getRowCount();)
         {
             tableModel.removeRow(0);
         }
-        table.removeAll();
+
         try
         {
-            ArrayList<String> row = new ArrayList<String>();
+            ArrayList<String> row = new ArrayList<>();
             dbi = new DBI("databassesabc");
             resultSet = dbi.getSt().executeQuery("SELECT " + getStringFromArray(column, '`') + " " +
                     "FROM `прихід` " +

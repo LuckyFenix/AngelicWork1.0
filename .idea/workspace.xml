@@ -2,6 +2,98 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="54d13a25-56fc-4892-8f0c-3e33f535f33a" name="Default" comment="Переименование">
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\AngelicWork-1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\Main\Main.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\RComponents\IndividArrayList.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\RComponents\LiveSearchComboBox$1.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\RComponents\LiveSearchComboBox$ComboBoxListener.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\RComponents\LiveSearchComboBox.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\RComponents\RComboBox.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\RComponents\RMenuBar.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\RComponents\RPanel.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\RComponents\RTable$1.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\RComponents\RTable$ColumnListener.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\RComponents\RTable$TablePopup.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\RComponents\RTable.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\RComponents\RToolBar.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\RComponents\RTree$1.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\RComponents\RTree$ClickListener.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\RComponents\RTree$TreePopup.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\RComponents\RTree.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\RComponents\WaybillPanel.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\RDialogs\AddWaybillDialog$1.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\RDialogs\AddWaybillDialog$OkBtnListener.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\RDialogs\AddWaybillDialog.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\RDialogs\ExportDialog.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\RDialogs\ExportToReimportDialog.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\RDialogs\ImportDialog$1.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\RDialogs\ImportDialog$closeBtnAction.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\RDialogs\ImportDialog$fileBtnList.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\RDialogs\ImportDialog$startBtnList$1.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\RDialogs\ImportDialog$startBtnList.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\RDialogs\ImportDialog.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\RDialogs\InvoiceNewNomenclatureDialog$1.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\RDialogs\InvoiceNewNomenclatureDialog$AmountFieldListener.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\RDialogs\InvoiceNewNomenclatureDialog$CategoryBoxListener.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\RDialogs\InvoiceNewNomenclatureDialog$GroupBoxListener.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\RDialogs\InvoiceNewNomenclatureDialog$IdFieldListener.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\RDialogs\InvoiceNewNomenclatureDialog$NameBoxListener.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\RDialogs\InvoiceNewNomenclatureDialog$NewBtnListener.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\RDialogs\InvoiceNewNomenclatureDialog$SaveBtnListener.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\RDialogs\InvoiceNewNomenclatureDialog.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\RDialogs\OpenWaybillDialog$1.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\RDialogs\OpenWaybillDialog$2.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\RDialogs\OpenWaybillDialog.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\RDialogs\RDialog.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\RDialogs\StaffDialog$1.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\RDialogs\StaffDialog$deleteStaffAction.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\RDialogs\StaffDialog$editStaffAction.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\RDialogs\StaffDialog$newStaffAction.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\RDialogs\StaffDialog.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\RDialogs\SuppliersDialog$1.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\RDialogs\SuppliersDialog$deleteSupplierAction.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\RDialogs\SuppliersDialog$editSupplierAction.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\RDialogs\SuppliersDialog$newSupplierAction.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\RDialogs\SuppliersDialog.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\Support\DBI.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\Support\GBC.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\Support\TranslatingMap.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\Support\Translator.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\TableColumnGroup\ColumnGroup$1.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\TableColumnGroup\ColumnGroup.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\TableColumnGroup\GroupableTableHeader.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\TableColumnGroup\GroupableTableHeaderUI$1.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\TableColumnGroup\GroupableTableHeaderUI.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\Waybills\Invoice$1.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\Waybills\Invoice$SelectSupplierDialog$1.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\Waybills\Invoice$SelectSupplierDialog.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\Waybills\Invoice.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\Waybills\Revision$1.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\Waybills\Revision$ImportBtnListener.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\Waybills\Revision.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\Waybills\WaybillSelling$1.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\Waybills\WaybillSelling$AddStaffDialog$1.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\Waybills\WaybillSelling$AddStaffDialog.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\Waybills\WaybillSelling$ExportBtnListener.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\Waybills\WaybillSelling$ExportForReimportBtnListener.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\Waybills\WaybillSelling.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\db_conection.properties" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\icon\excel_icon.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\icon\file_delete.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\icon\file_new.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\icon\file_open.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\icon\file_report.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\icon\file_save.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\icon\file_supplier.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\classes\Товари.xls" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\excel-data-base-1.0-SNAPSHOT.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\lib\commons-codec-1.5.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\lib\microba-0.4.4.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\lib\mysql-connector-java-5.1.31.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\lib\poi-3.10-FINAL.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\IdeaProjects\AngelicWork\target\maven-archiver\pom.properties" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Waybills/Invoice.java" afterPath="$PROJECT_DIR$/src/main/java/Waybills/Invoice.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/RDialogs/InvoiceNewNomenclatureDialog.java" afterPath="$PROJECT_DIR$/src/main/java/RDialogs/InvoiceNewNomenclatureDialog.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="AngelicWork.iws" />
@@ -25,30 +117,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="Invoice.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Waybills/Invoice.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.631478" vertical-offset="0" max-vertical-offset="1377">
-              <caret line="50" column="32" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="32" />
-              <folding />
+            <state vertical-scroll-proportion="0.0" vertical-offset="4003" max-vertical-offset="6732">
+              <caret line="119" column="9" selection-start-line="119" selection-start-column="9" selection-end-line="119" selection-end-column="9" />
+              <folding>
+                <marker date="1402672611386" expanded="true" signature="1465:1494" placeholder="SELECT * FRO..." />
+                <marker date="1402672611386" expanded="true" signature="4311:4420" placeholder="SELECT `Номе..." />
+                <marker date="1402672611386" expanded="true" signature="5180:5436" placeholder="SELECT missi..." />
+                <marker date="1402672611386" expanded="true" signature="6570:6801" placeholder="SELECT missi..." />
+                <marker date="1402672611386" expanded="true" signature="8542:8762" placeholder="SELECT * FRO..." />
+                <marker date="1402672611386" expanded="true" signature="9134:9407" placeholder="DELETE FROM ..." />
+                <marker date="1402672611386" expanded="true" signature="9666:9799" placeholder="SELECT `Прих..." />
+                <marker date="1402672611386" expanded="true" signature="10324:10542" placeholder="SELECT `Дата..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Invoice.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Waybills/Invoice.java">
+      <file leaf-file-name="InvoiceNewNomenclatureDialog.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/RDialogs/InvoiceNewNomenclatureDialog.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2499" max-vertical-offset="7463">
-              <caret line="147" column="30" selection-start-line="147" selection-start-column="30" selection-end-line="147" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.4452975" vertical-offset="1774" max-vertical-offset="8976">
+              <caret line="133" column="49" selection-start-line="133" selection-start-column="49" selection-end-line="133" selection-end-column="49" />
               <folding>
-                <marker date="1401930868512" expanded="true" signature="1465:1494" placeholder="SELECT * FRO..." />
-                <marker date="1401930868512" expanded="true" signature="4311:4420" placeholder="SELECT `Номе..." />
-                <marker date="1401930868512" expanded="true" signature="5208:5464" placeholder="SELECT missi..." />
-                <marker date="1401930868512" expanded="true" signature="6598:6829" placeholder="SELECT missi..." />
-                <marker date="1401930868512" expanded="true" signature="8570:8790" placeholder="SELECT * FRO..." />
-                <marker date="1401930868512" expanded="true" signature="9162:9435" placeholder="DELETE FROM ..." />
-                <marker date="1401930868512" expanded="true" signature="9694:9827" placeholder="SELECT `Прих..." />
-                <marker date="1401930868512" expanded="true" signature="10352:10570" placeholder="SELECT `Дата..." />
+                <marker date="1402672699265" expanded="true" signature="6000:6219" placeholder="SELECT missi..." />
+                <marker date="1402672699265" expanded="true" signature="7093:7321" placeholder="SELECT `Один..." />
+                <marker date="1402672699265" expanded="true" signature="8153:8219" placeholder="SELECT `Арти..." />
+                <marker date="1402672699265" expanded="true" signature="8714:8749" placeholder="SELECT `Назв..." />
+                <marker date="1402672699265" expanded="true" signature="8809:8881" placeholder="SELECT `Назв..." />
+                <marker date="1402672699265" expanded="true" signature="8929:9029" placeholder="SELECT `Назв..." />
+                <marker date="1402672699265" expanded="true" signature="9556:9588" placeholder="SELECT * FRO..." />
+                <marker date="1402672699265" expanded="true" signature="10859:10960" placeholder="SELECT `Кате..." />
+                <marker date="1402672699265" expanded="true" signature="16912:17594" placeholder="INSERT INTO ..." />
+                <marker date="1402672699265" expanded="true" signature="17993:18298" placeholder="SELECT `Арти..." />
+                <marker date="1402672699265" expanded="true" signature="18668:19304" placeholder="INSERT INTO ..." />
+                <marker date="1402672699265" expanded="true" signature="19458:19742" placeholder="SELECT `Арти..." />
+                <marker date="1402672699265" expanded="true" signature="20043:20887" placeholder="INSERT INTO ..." />
               </folding>
             </state>
           </provider>
@@ -142,6 +248,8 @@
         <option value="$PROJECT_DIR$/src/main/java/Waybills/WaybillSelling.java" />
         <option value="$PROJECT_DIR$/src/main/java/Waybills/Revision.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/Waybills/Invoice.java" />
+        <option value="$PROJECT_DIR$/src/main/java/RDialogs/InvoiceNewNomenclatureDialog.java" />
       </list>
     </option>
   </component>
@@ -283,6 +391,162 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AngelicWork" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AngelicWork" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Waybills" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AngelicWork" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AngelicWork" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TableColumnGroup" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AngelicWork" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AngelicWork" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Support" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AngelicWork" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AngelicWork" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RDialogs" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AngelicWork" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AngelicWork" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RComponents" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AngelicWork" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AngelicWork" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Main" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -561,7 +825,13 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="AngelicWork" />
       <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -591,7 +861,8 @@
       <workItem from="1402532489618" duration="7000" />
       <workItem from="1402532497451" duration="16433000" />
       <workItem from="1402607718563" duration="363000" />
-      <workItem from="1402608091493" duration="1109000" />
+      <workItem from="1402608091493" duration="2350000" />
+      <workItem from="1402671920489" duration="804000" />
     </task>
     <task id="LOCAL-00001" summary="Переименование">
       <created>1402609114476</created>
@@ -605,20 +876,20 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17974000" />
+    <option name="totallyTimeSpent" value="20019000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1064" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32919955" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32919955" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3990981" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -628,15 +899,15 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33850268" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34278074" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24973261" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32919955" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32919955" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -660,13 +931,92 @@
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="5" />
+    </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="1377">
+          <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Waybills/Invoice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2499" max-vertical-offset="7463">
+          <caret line="147" column="30" selection-start-line="147" selection-start-column="30" selection-end-line="147" selection-end-column="30" />
+          <folding>
+            <marker date="1402672611386" expanded="true" signature="1465:1494" placeholder="SELECT * FRO..." />
+            <marker date="1402672611386" expanded="true" signature="4311:4420" placeholder="SELECT `Номе..." />
+            <marker date="1402672611386" expanded="true" signature="5180:5436" placeholder="SELECT missi..." />
+            <marker date="1402672611386" expanded="true" signature="6570:6801" placeholder="SELECT missi..." />
+            <marker date="1402672611386" expanded="true" signature="8542:8762" placeholder="SELECT * FRO..." />
+            <marker date="1402672611386" expanded="true" signature="9134:9407" placeholder="DELETE FROM ..." />
+            <marker date="1402672611386" expanded="true" signature="9666:9799" placeholder="SELECT `Прих..." />
+            <marker date="1402672611386" expanded="true" signature="10324:10542" placeholder="SELECT `Дата..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Waybills/Revision.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="6545">
+          <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+          <folding>
+            <marker date="1402604921027" expanded="true" signature="4955:5083" placeholder="SELECT missi..." />
+            <marker date="1402604921027" expanded="true" signature="6867:6938" placeholder="SELECT * FRO..." />
+            <marker date="1402604921027" expanded="true" signature="7292:8504" placeholder="CREATE TABLE..IF..." />
+            <marker date="1402604921027" expanded="true" signature="10767:11022" placeholder="SELECT `Груп..." />
+            <marker date="1402604921027" expanded="true" signature="12912:13167" placeholder="SELECT `Назв..." />
+            <marker date="1402604921027" expanded="true" signature="13333:14124" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/RComponents/RToolBar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="1292">
+          <caret line="26" column="38" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Waybills/WaybillSelling.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1139" max-vertical-offset="7922">
+          <caret line="67" column="45" selection-start-line="67" selection-start-column="45" selection-end-line="67" selection-end-column="45" />
+          <folding>
+            <marker date="1402585717911" expanded="true" signature="5247:5465" placeholder="SELECT `Дата..." />
+            <marker date="1402585717911" expanded="true" signature="5918:6173" placeholder="SELECT `Дата..." />
+            <marker date="1402585717911" expanded="true" signature="6688:6894" placeholder="SELECT missi..." />
+            <marker date="1402585717911" expanded="true" signature="8560:8590" placeholder="SELECT `Імя`..." />
+            <marker date="1402585717911" expanded="true" signature="17163:17456" placeholder="SELECT `Дата..." />
+            <marker date="1402585717911" expanded="true" signature="18004:18314" placeholder="SELECT `Назв..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/RComponents/RTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="629" max-vertical-offset="4607">
+          <caret line="37" column="9" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
+          <folding>
+            <marker date="1402581637982" expanded="true" signature="2320:2389" placeholder="SELECT * FRO..." />
+            <marker date="1402581637982" expanded="true" signature="6149:6160" placeholder="DROP TABLE m..." />
+            <marker date="1402581637982" expanded="true" signature="6689:6772" placeholder="DELETE FROM ..." />
+            <marker date="1402581637982" expanded="true" signature="7441:7505" placeholder="INSERT INTO ..." />
+            <marker date="1402581637982" expanded="true" signature="8057:8261" placeholder="CREATE TABLE..IF..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="1377">
@@ -680,14 +1030,14 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="2499" max-vertical-offset="7463">
           <caret line="147" column="30" selection-start-line="147" selection-start-column="30" selection-end-line="147" selection-end-column="30" />
           <folding>
-            <marker date="1401930868512" expanded="true" signature="1465:1494" placeholder="SELECT * FRO..." />
-            <marker date="1401930868512" expanded="true" signature="4311:4420" placeholder="SELECT `Номе..." />
-            <marker date="1401930868512" expanded="true" signature="5208:5464" placeholder="SELECT missi..." />
-            <marker date="1401930868512" expanded="true" signature="6598:6829" placeholder="SELECT missi..." />
-            <marker date="1401930868512" expanded="true" signature="8570:8790" placeholder="SELECT * FRO..." />
-            <marker date="1401930868512" expanded="true" signature="9162:9435" placeholder="DELETE FROM ..." />
-            <marker date="1401930868512" expanded="true" signature="9694:9827" placeholder="SELECT `Прих..." />
-            <marker date="1401930868512" expanded="true" signature="10352:10570" placeholder="SELECT `Дата..." />
+            <marker date="1402672611386" expanded="true" signature="1465:1494" placeholder="SELECT * FRO..." />
+            <marker date="1402672611386" expanded="true" signature="4311:4420" placeholder="SELECT `Номе..." />
+            <marker date="1402672611386" expanded="true" signature="5180:5436" placeholder="SELECT missi..." />
+            <marker date="1402672611386" expanded="true" signature="6570:6801" placeholder="SELECT missi..." />
+            <marker date="1402672611386" expanded="true" signature="8542:8762" placeholder="SELECT * FRO..." />
+            <marker date="1402672611386" expanded="true" signature="9134:9407" placeholder="DELETE FROM ..." />
+            <marker date="1402672611386" expanded="true" signature="9666:9799" placeholder="SELECT `Прих..." />
+            <marker date="1402672611386" expanded="true" signature="10324:10542" placeholder="SELECT `Дата..." />
           </folding>
         </state>
       </provider>
@@ -757,14 +1107,14 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="2499" max-vertical-offset="7463">
           <caret line="147" column="30" selection-start-line="147" selection-start-column="30" selection-end-line="147" selection-end-column="30" />
           <folding>
-            <marker date="1401930868512" expanded="true" signature="1465:1494" placeholder="SELECT * FRO..." />
-            <marker date="1401930868512" expanded="true" signature="4311:4420" placeholder="SELECT `Номе..." />
-            <marker date="1401930868512" expanded="true" signature="5208:5464" placeholder="SELECT missi..." />
-            <marker date="1401930868512" expanded="true" signature="6598:6829" placeholder="SELECT missi..." />
-            <marker date="1401930868512" expanded="true" signature="8570:8790" placeholder="SELECT * FRO..." />
-            <marker date="1401930868512" expanded="true" signature="9162:9435" placeholder="DELETE FROM ..." />
-            <marker date="1401930868512" expanded="true" signature="9694:9827" placeholder="SELECT `Прих..." />
-            <marker date="1401930868512" expanded="true" signature="10352:10570" placeholder="SELECT `Дата..." />
+            <marker date="1402672611386" expanded="true" signature="1465:1494" placeholder="SELECT * FRO..." />
+            <marker date="1402672611386" expanded="true" signature="4311:4420" placeholder="SELECT `Номе..." />
+            <marker date="1402672611386" expanded="true" signature="5180:5436" placeholder="SELECT missi..." />
+            <marker date="1402672611386" expanded="true" signature="6570:6801" placeholder="SELECT missi..." />
+            <marker date="1402672611386" expanded="true" signature="8542:8762" placeholder="SELECT * FRO..." />
+            <marker date="1402672611386" expanded="true" signature="9134:9407" placeholder="DELETE FROM ..." />
+            <marker date="1402672611386" expanded="true" signature="9666:9799" placeholder="SELECT `Прих..." />
+            <marker date="1402672611386" expanded="true" signature="10324:10542" placeholder="SELECT `Дата..." />
           </folding>
         </state>
       </provider>
@@ -856,7 +1206,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.09953161" vertical-offset="0" max-vertical-offset="1190">
           <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -898,7 +1247,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="84" max-vertical-offset="952">
           <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -907,7 +1255,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="386" max-vertical-offset="1428">
           <caret line="35" column="32" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -924,7 +1272,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="4352">
           <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -960,23 +1308,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4455645" vertical-offset="0" max-vertical-offset="1377">
           <caret line="14" column="71" selection-start-line="14" selection-start-column="71" selection-end-line="14" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Waybills/Invoice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1799" max-vertical-offset="6766">
-          <caret line="147" column="30" selection-start-line="147" selection-start-column="30" selection-end-line="147" selection-end-column="30" />
-          <folding>
-            <marker date="1401930868512" expanded="true" signature="1465:1494" placeholder="SELECT * FRO..." />
-            <marker date="1401930868512" expanded="true" signature="4311:4420" placeholder="SELECT `Номе..." />
-            <marker date="1401930868512" expanded="true" signature="5208:5464" placeholder="SELECT missi..." />
-            <marker date="1401930868512" expanded="true" signature="6598:6829" placeholder="SELECT missi..." />
-            <marker date="1401930868512" expanded="true" signature="8570:8790" placeholder="SELECT * FRO..." />
-            <marker date="1401930868512" expanded="true" signature="9162:9435" placeholder="DELETE FROM ..." />
-            <marker date="1401930868512" expanded="true" signature="9694:9827" placeholder="SELECT `Прих..." />
-            <marker date="1401930868512" expanded="true" signature="10352:10570" placeholder="SELECT `Дата..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1025,8 +1356,8 @@
           <OriginalElement>com.luckyfenix.excelDataBase:excel-data-base:1.0-SNAPSHOT</OriginalElement>
           <nodes>
             <node x="" y="">com.michaelbaranov:microba:jar:0.4.4.3</node>
-            <node x="" y="">org.apache.poi:poi:jar:3.10-FINAL/commons-codec:commons-codec:jar:1.5</node>
             <node x="" y="">com.luckyfenix.excelDataBase:excel-data-base:1.0-SNAPSHOT</node>
+            <node x="" y="">org.apache.poi:poi:jar:3.10-FINAL/commons-codec:commons-codec:jar:1.5</node>
             <node x="" y="">org.apache.poi:poi:jar:3.10-FINAL</node>
             <node x="" y="">mysql:mysql-connector-java:jar:5.1.31</node>
           </nodes>
@@ -1035,6 +1366,7 @@
           <settings layout="Hierarchic Group" zoom="1.0" x="198.0" y="61.0" />
           <SelectedNodes />
           <Categories />
+          <SCOPE>All</SCOPE>
           <VISIBILITY>All</VISIBILITY>
         </state>
       </provider>
@@ -1043,15 +1375,53 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4894434" vertical-offset="0" max-vertical-offset="19397">
           <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.631478" vertical-offset="0" max-vertical-offset="1377">
-          <caret line="50" column="32" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="32" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="1377">
+          <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Waybills/Invoice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="4309" max-vertical-offset="6732">
+          <caret line="119" column="9" selection-start-line="119" selection-start-column="9" selection-end-line="119" selection-end-column="9" />
+          <folding>
+            <marker date="1402672611386" expanded="true" signature="1465:1494" placeholder="SELECT * FRO..." />
+            <marker date="1402672611386" expanded="true" signature="4311:4420" placeholder="SELECT `Номе..." />
+            <marker date="1402672611386" expanded="true" signature="5180:5436" placeholder="SELECT missi..." />
+            <marker date="1402672611386" expanded="true" signature="6570:6801" placeholder="SELECT missi..." />
+            <marker date="1402672611386" expanded="true" signature="8542:8762" placeholder="SELECT * FRO..." />
+            <marker date="1402672611386" expanded="true" signature="9134:9407" placeholder="DELETE FROM ..." />
+            <marker date="1402672611386" expanded="true" signature="9666:9799" placeholder="SELECT `Прих..." />
+            <marker date="1402672611386" expanded="true" signature="10324:10542" placeholder="SELECT `Дата..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/RDialogs/InvoiceNewNomenclatureDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4452975" vertical-offset="1774" max-vertical-offset="8976">
+          <caret line="133" column="49" selection-start-line="133" selection-start-column="49" selection-end-line="133" selection-end-column="49" />
+          <folding>
+            <marker date="1402672699265" expanded="true" signature="6000:6219" placeholder="SELECT missi..." />
+            <marker date="1402672699265" expanded="true" signature="7093:7321" placeholder="SELECT `Один..." />
+            <marker date="1402672699265" expanded="true" signature="8153:8219" placeholder="SELECT `Арти..." />
+            <marker date="1402672699265" expanded="true" signature="8714:8749" placeholder="SELECT `Назв..." />
+            <marker date="1402672699265" expanded="true" signature="8809:8881" placeholder="SELECT `Назв..." />
+            <marker date="1402672699265" expanded="true" signature="8929:9029" placeholder="SELECT `Назв..." />
+            <marker date="1402672699265" expanded="true" signature="9556:9588" placeholder="SELECT * FRO..." />
+            <marker date="1402672699265" expanded="true" signature="10859:10960" placeholder="SELECT `Кате..." />
+            <marker date="1402672699265" expanded="true" signature="16912:17594" placeholder="INSERT INTO ..." />
+            <marker date="1402672699265" expanded="true" signature="17993:18298" placeholder="SELECT `Арти..." />
+            <marker date="1402672699265" expanded="true" signature="18668:19304" placeholder="INSERT INTO ..." />
+            <marker date="1402672699265" expanded="true" signature="19458:19742" placeholder="SELECT `Арти..." />
+            <marker date="1402672699265" expanded="true" signature="20043:20887" placeholder="INSERT INTO ..." />
+          </folding>
         </state>
       </provider>
     </entry>
