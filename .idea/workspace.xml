@@ -120,9 +120,9 @@
             <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="24599">
               <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
               <folding>
-                <marker date="1402697089757" expanded="true" signature="82147:82195" placeholder="..." />
-                <marker date="1402697089757" expanded="true" signature="82147:82182" placeholder="..." />
-                <marker date="1402697089757" expanded="true" signature="82147:82164" placeholder="..." />
+                <marker date="1402697156351" expanded="true" signature="82147:82195" placeholder="..." />
+                <marker date="1402697156351" expanded="true" signature="82147:82182" placeholder="..." />
+                <marker date="1402697156351" expanded="true" signature="82147:82164" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -716,7 +716,7 @@
       <workItem from="1402608091493" duration="2350000" />
       <workItem from="1402671920489" duration="2051000" />
       <workItem from="1402684496818" duration="881000" />
-      <workItem from="1402695100422" duration="1584000" />
+      <workItem from="1402695100422" duration="1641000" />
     </task>
     <task id="LOCAL-00001" summary="Переименование">
       <created>1402609114476</created>
@@ -734,7 +734,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23731000" />
+    <option name="totallyTimeSpent" value="23788000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1064" extended-state="7" />
@@ -1328,9 +1328,9 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="24599">
           <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
           <folding>
-            <marker date="1402697089757" expanded="true" signature="82147:82195" placeholder="..." />
-            <marker date="1402697089757" expanded="true" signature="82147:82182" placeholder="..." />
-            <marker date="1402697089757" expanded="true" signature="82147:82164" placeholder="..." />
+            <marker date="1402697156351" expanded="true" signature="82147:82195" placeholder="..." />
+            <marker date="1402697156351" expanded="true" signature="82147:82182" placeholder="..." />
+            <marker date="1402697156351" expanded="true" signature="82147:82164" placeholder="..." />
           </folding>
         </state>
       </provider>
