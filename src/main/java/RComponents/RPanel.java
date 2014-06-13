@@ -9,7 +9,6 @@ import org.apache.poi.poifs.filesystem.POIFSFileSystem;
 import javax.swing.*;
 import javax.swing.table.JTableHeader;
 import javax.swing.table.TableColumn;
-import java.io.FileInputStream;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -59,7 +58,7 @@ public class RPanel extends JPanel
     {
         try
         {
-            POIFSFileSystem fs = new POIFSFileSystem(new FileInputStream(filename));
+            POIFSFileSystem fs = new POIFSFileSystem(getClass().getResourceAsStream("/" + filename));
             return new HSSFWorkbook(fs);
         }
         catch (Exception e)
