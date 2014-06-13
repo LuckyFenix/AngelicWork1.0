@@ -173,7 +173,7 @@ public class ExportDialog
     {
         try
         {
-            POIFSFileSystem fs = new POIFSFileSystem(getClass().getResourceAsStream(filename));
+            POIFSFileSystem fs = new POIFSFileSystem(getClass().getResourceAsStream("/" + filename));
             return new HSSFWorkbook(fs);
         } catch (Exception e) {return null;}
     }
