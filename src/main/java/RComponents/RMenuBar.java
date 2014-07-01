@@ -19,6 +19,7 @@ public class RMenuBar extends JMenuBar
     {
         this.main = main;
         waybillMenu = new JMenu(main.getToolBat().getComboBox().getSelectedItem().toString());
+
         JMenu warehouseMenu = new JMenu("Склад");
 
         JMenu suppliersMenu = new JMenu("Постачальники");

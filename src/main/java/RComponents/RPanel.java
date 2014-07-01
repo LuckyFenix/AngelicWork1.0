@@ -147,7 +147,7 @@ public class RPanel extends JPanel
                     String s = table.getModel().getValueAt(j, i).toString();
                     prefWidth = Math.round((float) th.getFontMetrics(th.getFont()).getStringBounds(s, th.getGraphics()).getWidth());
                     if ( prefWidth > prefWidthMax ) prefWidthMax = prefWidth;
-                } catch (NullPointerException ignored) {}
+                } catch (NullPointerException e) {}
             }
             column.setPreferredWidth(prefWidthMax + 10);
         }

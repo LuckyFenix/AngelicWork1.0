@@ -36,14 +36,38 @@ public class RToolBar extends JToolBar
 
         openDoc.addActionListener(e -> new OpenWaybillDialog(main, comboBox.getSelectedItem().toString()));
 
-        suppliers.addActionListener(e ->
+        saveDoc.addActionListener(e ->
         {
-            new SuppliersDialog(main);
+            if (comboBox.getSelectedItem().equals("Ревізія"))
+                main.getWaybillPanel().getRevision().saveRevision();
+            else
+                try
+                {
+                    Thread.sleep(3000);
+                } catch (InterruptedException ignored){}
         });
+
+        reportDoc.addActionListener(e ->
+        {
+            if (comboBox.getSelectedItem().equals("Ревізія"))
+                main.getWaybillPanel().getRevision().exportToExcel();
+        });
+
+        suppliers.addActionListener(e -> new SuppliersDialog(main));
 
         comboBox.addActionListener(e ->
         {
             main.getRMenuBar().getWaybillMenu().setText(comboBox.getSelectedItem().toString());
+            JMenuItem deleteNull = null;
+            if (comboBox.getSelectedItem().equals("Ревізія"))
+            {
+                deleteNull = new JMenuItem("Удалить нули");
+                deleteNull.addActionListener(e1 -> main.getWaybillPanel().getRevision().nullDelete());
+                main.getRMenuBar().getWaybillMenu().add(deleteNull);
+            } else
+            {
+                main.getRMenuBar().getWaybillMenu().remove(deleteNull);
+            }
             main.getWaybillPanel().init(comboBox.getSelectedItem().toString());
         });
 

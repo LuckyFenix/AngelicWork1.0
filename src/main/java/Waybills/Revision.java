@@ -1,25 +1,32 @@
 package Waybills;
 
 import Main.Main;
-import RComponents.*;
+import RComponents.RPanel;
 import Support.DBI;
 import Support.GBC;
 import com.michaelbaranov.microba.calendar.DatePicker;
-import org.apache.poi.hssf.usermodel.*;
+import org.apache.poi.hssf.usermodel.HSSFCell;
+import org.apache.poi.hssf.usermodel.HSSFRow;
+import org.apache.poi.hssf.usermodel.HSSFSheet;
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.poifs.filesystem.POIFSFileSystem;
+import org.apache.poi.ss.usermodel.Row;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.sql.ResultSet;
+import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 import java.text.ParseException;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Date;
+import java.util.*;
 
 public class Revision extends RPanel
 {
@@ -107,10 +114,11 @@ public class Revision extends RPanel
                 "Назва товару",
                 "Залишок на початок. Склад",
                 "Залишок на початок. Магазин",
+                "Залишок на початок. Ro-Max",
                 "Прихід ABC",
                 "Списано ABC",
                 "Видано у Ro-Max",
-                "Повернуто із Ro-Max",
+                "Залишок у Ro-Max",
                 "Залишок на кінець. Склад",
                 "Залишок на кінець. Магазин",
                 "Різниця",
@@ -152,7 +160,7 @@ public class Revision extends RPanel
                     resultSet = dbi.getSt().executeQuery("SELECT " + getStringFromArray(column, '`') + ", `Група` FROM `" + main.getDataBaseDateFormat().format(datePicker.getDate()) + "`;");
                     while (resultSet.next())
                     {
-                        group = resultSet.getString(13);
+                        group = resultSet.getString(14);
                         if (!group.equals(thisGroup))
                         {
                             row.add("");
@@ -168,10 +176,10 @@ public class Revision extends RPanel
                                 row.add(resultSet.getString(i));
                             else
                             {
-                                if (i > 5 && i < 12)
+                                if (i > 5 && i < 13)
                                     row.add("");
                                 else
-                                if (i != 13)
+                                if (i != 14)
                                     row.add("" + resultSet.getDouble(i));
                             }
                         }
@@ -197,7 +205,7 @@ public class Revision extends RPanel
             if (resultSet.next())
                 b = false;
             dbi.close(main.k);
-        } catch (SQLException ignored) {}
+        } catch (SQLException e) {}
 
         if (b)
         {
@@ -212,10 +220,11 @@ public class Revision extends RPanel
                             " `Назва товару` text," +
                             " `Залишок на початок. Склад` decimal(10,3) DEFAULT NULL," +
                             " `Залишок на початок. Магазин` decimal(10,3) DEFAULT NULL," +
+                            " `Залишок на початок. Ro-Max` decimal(10,3) DEFAULT NULL," +
                             " `Прихід ABC` decimal(10,3) DEFAULT NULL," +
                             " `Списано ABC` decimal(10,3) DEFAULT NULL," +
                             " `Видано у Ro-Max` decimal(10,3) DEFAULT NULL," +
-                            " `Повернуто із Ro-Max` decimal(10,3) DEFAULT NULL," +
+                            " `Залишок у Ro-Max` decimal(10,3) DEFAULT NULL," +
                             " `Залишок на кінець. Склад` decimal(10,3) DEFAULT NULL," +
                             " `Залишок на кінець. Магазин` decimal(10,3) DEFAULT NULL," +
                             " `Різниця` decimal(10,3) DEFAULT NULL," +
@@ -267,7 +276,7 @@ public class Revision extends RPanel
 
     private void createExcelForCategory(String category)
     {
-        HSSFWorkbook workbook = readWorkbook("Ревізія.xls");
+        HSSFWorkbook workbook = readShablonWorkbook("Ревізія.xls");
         HSSFSheet sheet = workbook.getSheetAt(0);
         HSSFRow row;
         HSSFCell cell;
@@ -276,7 +285,7 @@ public class Revision extends RPanel
             String thisGroup = "";
             String group;
             dbi = new DBI("databassesabc");
-            resultSet = dbi.getSt().executeQuery("SELECT `Група`, `Назва товару`, `Залишок на початок. Склад`, `Залишок на початок. Магазин`, `Прихід`, `Ціна` " +
+            resultSet = dbi.getSt().executeQuery("SELECT `Група`, `Назва товару`, `Одиниці вимірювання`, `Залишок на початок. Склад`, `Залишок на початок. Магазин`, `Прихід`, `Ціна` " +
                     "FROM `товари` " +
                     "WHERE `Категорія`='" + category + "' " +
                     "ORDER BY `Група` ASC;");
@@ -298,7 +307,8 @@ public class Revision extends RPanel
                 row.getCell(2).setCellValue(resultSet.getDouble(3));
                 row.getCell(3).setCellValue(resultSet.getDouble(4));
                 row.getCell(4).setCellValue(resultSet.getDouble(5));
-                row.getCell(10).setCellFormula("C" + (i + 1) + "+" +
+                row.getCell(5).setCellValue(resultSet.getDouble(6));
+                row.getCell(11).setCellFormula("C" + (i + 1) + "+" +
                         "D" + (i + 1) + "+" +
                         "E" + (i + 1) + "-" +
                         "F" + (i + 1) + "-" +
@@ -306,7 +316,7 @@ public class Revision extends RPanel
                         "H" + (i + 1) + "-" +
                         "I" + (i + 1) + "-" +
                         "J" + (i + 1));
-                row.getCell(11).setCellValue(resultSet.getDouble(6));
+                row.getCell(12).setCellValue(resultSet.getDouble(7));
             }
         } catch (SQLException e) {e.printStackTrace();}
         try
@@ -328,7 +338,7 @@ public class Revision extends RPanel
             warehouseResultSet = dbiWarehouse.getSt().executeQuery("SELECT `Назва товару`, `Група`, `Залишок на початок. Склад`, `Залишок на початок. Магазин`, `Прихід`, `Ціна` " +
                     "FROM `товари` " +
                     "WHERE `Категорія`='" + category + "' " +
-                    "ORDER BY `Група` ASC;");
+                    "ORDER BY `Група`, `Назва товару` ASC;");
             while (warehouseResultSet.next())
             {
                 dbiRevision = new DBI("databassesabc");
@@ -350,30 +360,404 @@ public class Revision extends RPanel
         } catch (SQLException e) {e.printStackTrace();}
     }
 
+    public void saveRevision()
+    {
+        int n = JOptionPane.showConfirmDialog(main, "Ви впевнені, що бажаєте зберегти дані?", "Зберегти?", JOptionPane.YES_NO_OPTION);
+        if (n == JOptionPane.OK_OPTION)
+        {
+            try
+            {
+                dbi = new DBI("databassesabc");
+                dbi.getSt().executeUpdate("UPDATE `Товари` SET " +
+                        "`Залишок на початок. Магазин` = '0', " +
+                        "`Залишок на початок. Склад` = '0', " +
+                        "`Товару в загальному` = '0', " +
+                        "`Прихід` = '0';");
+                dbi.close(main.k);
+                dbi = new DBI("databassesabc");
+                resultSet = dbi.getSt().executeQuery("SELECT * FROM `" + main.getDataBaseDateFormat().format(datePicker.getDate()) + "`;");
+                while (resultSet.next())
+                {
+                    Map<String, String> map = new HashMap<>();
+                    ResultSetMetaData metaData = resultSet.getMetaData();
+                    for (int i = 0; i < resultSet.getMetaData().getColumnCount(); i++)
+                    {
+                        map.put(metaData.getColumnLabel(i+1), resultSet.getString(i+1));
+                    }
+                    DBI dbi1 = new DBI("databassesabc");
+                    String query = "SELECT * FROM `товари` " +
+                            "WHERE `Назва товару` = '" + map.get("Назва товару") + "' " +
+                            "AND `Ціна` = '" + map.get("Ціна") + "';";
+                    System.out.println(query);
+                    ResultSet resultSet1 = dbi1.getSt().executeQuery(query);
+                    if (resultSet1.next())
+                    {
+                        DBI dbi2 = new DBI("databassesabc");
+                        query = "UPDATE `товари` " +
+                                "SET " +
+                                "`Залишок на початок. Склад` = '" + map.get("Залишок на кінець. Склад") + "', " +
+                                "`Залишок на початок. Магазин` = '" + map.get("Залишок на кінець. Магазин") + "', " +
+                                "`Прихід` = '0', " +
+                                "`Товару в загальному` = '" + (Double.parseDouble(map.get("Залишок на кінець. Склад")) + Double.parseDouble(map.get("Залишок на кінець. Магазин"))) + "' " +
+                                "WHERE " +
+                                "`Назва товару` = '" + map.get("Назва товару") + "' " +
+                                "AND " +
+                                "`Ціна` = '" + map.get("Ціна") + "';";
+                        System.out.println(query);
+                        dbi2.getSt().executeUpdate(query);
+                        dbi2.close(main.k);
+                    } else
+                    {
+                        String category;
+                        DBI dbi2 = new DBI("databassesabc");
+                        ResultSet resultSet2 = dbi2.getSt().executeQuery("SELECT `Категорія` FROM `товари` " +
+                                "WHERE `Група` = '" + map.get("Група") + "';");
+                        if (resultSet2.next())
+                        {
+                            category = resultSet2.getString("Категорія");
+                            resultSet2.close();
+                            dbi2.close(main.k);
+                            dbi2 = new DBI("databassesabc");
+                            query = "INSERT INTO `товари` (" +
+                                    "`Категорія`, " +
+                                    "`Група`, " +
+                                    "`Назва товару`, " +
+                                    "`Одиниці вимірювання`, " +
+                                    "`Залишок на початок. Склад`, " +
+                                    "`Залишок на початок. Магазин`, " +
+                                    "`Товару в загальному`, " +
+                                    "`Ціна`, " +
+                                    "`Ціна закупочна`, " +
+                                    "`Дата останнього приходу`) " +
+                                    "VALUES (" +
+                                    "'" + category + "', " +
+                                    "'" + map.get("Група") + "', " +
+                                    "'" + map.get("Назва товару") + "', " +
+                                    "'шт.', " +
+                                    "'" + map.get("Залишок на кінець. Склад") + "', " +
+                                    "'" + map.get("Залишок на кінець. Магазин") + "', " +
+                                    "'" + (Double.parseDouble(map.get("Залишок на кінець. Склад")) + Double.parseDouble(map.get("Залишок на кінець. Магазин"))) + "', " +
+                                    "'" + map.get("Ціна") + "', " +
+                                    "'0', " +
+                                    "'0000-00-00');";
+                            System.out.println(query);
+                            dbi2.getSt().executeUpdate(query);
+                            dbi2.close(main.k);
+                        }
+                        resultSet1.close();
+                        dbi1.close(main.k);
+                    }
+                }
+                resultSet.close();
+                dbi.close(main.k);
+                JOptionPane.showMessageDialog(main, "Сохранение успешно завершено");
+            } catch (Exception e1)
+            {
+                JOptionPane.showMessageDialog(main, e1, "Ошибка", JOptionPane.ERROR_MESSAGE);
+                e1.printStackTrace();
+            }
+        }
+    }
+
+    public void nullDelete()
+    {
+        String date = main.getDataBaseDateFormat().format(datePicker.getDate());
+        try
+        {
+            ArrayList names = new ArrayList();
+            dbi = new DBI("databassesabc");
+            resultSet = dbi.getSt().executeQuery("SELECT " +
+                    "`товари`.`Назва товару` " +
+                    "FROM " +
+                    "`товари`, " +
+                    "`" + date + "` " +
+                    "WHERE " +
+                    "`товари`.`Назва товару`=`" + date + "`.`Назва товару` " +
+                    "AND " +
+                    "`товари`.`Ціна`=`" + date + "`.`Ціна` " +
+                    "AND" +
+                    "`товари`.`Залишок на початок. Магазин`='0'" +
+                    "AND" +
+                    "`товари`.`Залишок на початок. Склад`='0'" +
+                    "AND" +
+                    "`" + date + "`.`Залишок у Ro-Max`='0' " +
+                    "ORDER BY `товари`.`Категорія`, `товари`.`Група`, `товари`.`Назва товару` ASC;");
+            while (resultSet.next())
+            {
+                names.add(resultSet.getString("Назва товару"));
+            }
+            resultSet.close();
+            dbi.close(main.k);
+            String[] column = {"Група", "Назва товару", "Магазин", "Склад", "Ro-Max", "Ціна", "Ціна прихідна", "Дата останнього приходу"};
+            DefaultTableModel tableModel = new DefaultTableModel(column, 0);
+            for (int i = 0; i < names.size(); i++)
+            {
+                dbi = new DBI("databassesabc");
+                resultSet = dbi.getSt().executeQuery("SELECT " +
+                        "`товари`.`Група`, " +
+                        "`товари`.`Назва товару`, " +
+                        "`товари`.`Залишок на початок. Магазин`, " +
+                        "`товари`.`Залишок на початок. Склад`, " +
+                        "`2014-07-01`.`Залишок у Ro-Max`, " +
+                        "`товари`.`Ціна`, " +
+                        "`товари`.`Ціна закупочна`, " +
+                        "`товари`.`Дата останнього приходу` " +
+                        "FROM " +
+                        "`товари`, " +
+                        "`2014-07-01` " +
+                        "WHERE " +
+                        "`товари`.`Назва товару`=`2014-07-01`.`Назва товару` " +
+                        "AND " +
+                        "`товари`.`Ціна`=`2014-07-01`.`Ціна` " +
+                        "AND " +
+                        "`товари`.`Назва товару`='" + names.get(i) + "';");
+                while (resultSet.next())
+                {
+                    String d;
+                    try
+                    {
+                        d = resultSet.getString(8);
+                    } catch (SQLException e) {d = "0000-00-00";}
+
+                    tableModel.addRow(new Object[]
+                            {
+                                    resultSet.getString(1),
+                                    resultSet.getString(2),
+                                    resultSet.getString(3),
+                                    resultSet.getString(4),
+                                    resultSet.getString(5),
+                                    resultSet.getString(6),
+                                    resultSet.getString(7),
+                                    d
+                            });
+                }
+                resultSet.close();
+                dbi.close(main.k);
+            }
+            JTable table = new JTable(tableModel);
+            table.addMouseListener(new MouseAdapter()
+            {
+                @Override
+                public void mouseReleased(MouseEvent e)
+                {
+                    super.mouseReleased(e);
+                    if (e.getButton() == MouseEvent.BUTTON3)
+                    {
+                        int n = JOptionPane.showConfirmDialog(main, "Удалить");
+                        if (n == JOptionPane.OK_OPTION)
+                        {
+                            try
+                            {
+                                dbi = new DBI("databassesabc");
+                                dbi.getSt().execute("DELETE FROM `Товари` " +
+                                        "WHERE `Назва товару`='" + table.getValueAt(table.getSelectedRow(), 1) + "' " +
+                                        "AND `Ціна`='" + table.getValueAt(table.getSelectedRow(), 5) + "';");
+                                dbi.close(main.k);
+                                tableModel.removeRow(table.getSelectedRow());
+                            } catch (SQLException e1)
+                            {
+                                e1.printStackTrace();
+                            }
+                        }
+                    }
+                }
+            });
+            setColumnsWidthColumnLabileTextWeight(table);
+            JScrollPane scrollPane = new JScrollPane(table);
+            scrollPane.setMinimumSize(new Dimension(700, 1000));
+            JOptionPane.showMessageDialog(main, scrollPane);
+
+        } catch (SQLException e)
+        {
+            e.printStackTrace();
+        }
+    }
+
+    public void exportToExcel()
+    {
+        String date = main.getDataBaseDateFormat().format(datePicker.getDate());
+        int n = JOptionPane.showConfirmDialog(main, "Ви впевнені, що бажаєте зберегти дані?", "Зберегти?", JOptionPane.YES_NO_OPTION);
+        if (n == JOptionPane.OK_OPTION)
+        {
+            try
+            {
+                dbi = new DBI("databassesabc");
+//                resultSet = dbi.getSt().executeQuery("SELECT `товари`.*, `" + date + "`.`Залишок у Ro-Max` " +
+//                        "FROM `товари`, `" + date + "` " +
+//                        "WHERE `товари`.`Назва товару`=`" + date + "`.`Назва товару` " +
+//                        "AND `товари`.`Ціна`=`" + date + "`.`Ціна`" +
+//                        "ORDER BY `Категорія`, `Група`, `Назва товару` ASC;");
+                resultSet = dbi.getSt().executeQuery("SELECT * FROM `товари` " +
+                        "ORDER BY `Категорія`, `Група`, `Назва товару` ASC;");
+                HSSFWorkbook workbook = readShablonWorkbook("Ревізія реімпорт.xls");
+                HSSFSheet sheet = workbook.getSheetAt(0);
+                for (int i = 2; resultSet.next(); i++)
+                {
+                    String name = resultSet.getString("Назва товару");
+                    double price = resultSet.getDouble("Ціна");
+                    DBI dbi1 = new DBI("databassesabc");
+                    ResultSet resultSet1 = dbi1.getSt().executeQuery("SELECT `Залишок у Ro-Max` FROM `" + date + "` " +
+                            "WHERE `Ціна`='" + price + "' " +
+                            "AND `Назва товару`='" + name + "';");
+                    resultSet1.next();
+                    HSSFRow row = sheet.getRow(i);
+                    row.getCell(1).setCellValue(resultSet.getString("Категорія"));
+                    row.getCell(2).setCellValue(resultSet.getString("Група"));
+                    row.getCell(3).setCellValue(resultSet.getString("Назва товару"));
+                    row.getCell(4).setCellValue(resultSet.getString("Одиниці вимірювання"));
+                    row.getCell(5).setCellValue(resultSet.getString("Залишок на початок. Склад"));
+                    row.getCell(6).setCellValue(resultSet.getString("Залишок на початок. Магазин"));
+                    row.getCell(7).setCellValue(resultSet1.getString("Залишок у Ro-Max"));
+                    row.getCell(8).setCellValue(resultSet.getString("Ціна"));
+                    row.getCell(9).setCellValue(resultSet.getString("Ціна закупочна"));
+                    resultSet1.close();
+                    dbi1.close(main.k);
+                }
+                FileOutputStream fileOut = new FileOutputStream("Ревізія реімпорт.xls");
+                workbook.write(fileOut);
+                fileOut.close();
+                JOptionPane.showMessageDialog(main, "Експорт завершено");
+            } catch (Exception e) {e.printStackTrace();}
+        }
+    }
+
     private class ImportBtnListener implements ActionListener
     {
         @Override
-        public void actionPerformed(ActionEvent e) {
+        public void actionPerformed(ActionEvent e)
+        {
             int n = JOptionPane.showConfirmDialog(main, "Ви впевнені, що бажаєте імпотрувати дані з документів Excel?", "Імпорт", JOptionPane.YES_NO_OPTION);
             if (n == JOptionPane.OK_OPTION)
             {
                 for (String aCategory : category)
                 {
+                    String group = "";
+                    String query = "";
+                    boolean end = false;
                     HSSFWorkbook workbook = readWorkbook(aCategory + ".xls");
                     HSSFSheet sheet = workbook.getSheetAt(0);
-                    HSSFRow row;
-                    HSSFCell cell;     /*
-                    String name = null;
+                    Row row;
+                    HSSFCell cell;
+                    Iterator<Row> iterator = sheet.rowIterator();
+                    iterator.next();
+                    row = iterator.next();
+                    while (iterator.hasNext() || !end)
                     {
-                        row = sheet.getRow(i);
-                        name = row.getCell(1).getStringCellValue();
                         try
                         {
-
-                        }
-                    } while (!name.equals(""));    */
+                            if (row.getCell(12).getNumericCellValue() == 0)
+                            {
+                                group = row.getCell(1).getStringCellValue();
+                            } else
+                            {
+                                if (row.getCell(0).getNumericCellValue() == 0)
+                                {
+                                    String cell1 = row.getCell(1).getStringCellValue();
+                                    double cell2 = row.getCell(2).getNumericCellValue();
+                                    double cell3 = row.getCell(3).getNumericCellValue();
+                                    double cell4 = row.getCell(4).getNumericCellValue();
+                                    double cell5 = row.getCell(5).getNumericCellValue();
+                                    double cell6 = row.getCell(6).getNumericCellValue();
+                                    double cell7 = row.getCell(7).getNumericCellValue();
+                                    double cell8 = row.getCell(8).getNumericCellValue();
+                                    double cell9 = row.getCell(9).getNumericCellValue();
+                                    double cell10 = row.getCell(10).getNumericCellValue();
+                                    double cell11 = row.getCell(11).getNumericCellValue();
+                                    double cell12 = row.getCell(12).getNumericCellValue();
+                                    try
+                                    {
+                                        dbi = new DBI("databassesabc");
+                                        query = "INSERT INTO `" + main.getDataBaseDateFormat().format(datePicker.getDate()) + "` (" +
+                                                "`Група`, " +
+                                                "`" + column[1] + "`, " +
+                                                "`" + column[2] + "`, " +
+                                                "`" + column[3] + "`, " +
+                                                "`" + column[4] + "`, " +
+                                                "`" + column[5] + "`, " +
+                                                "`" + column[6] + "`, " +
+                                                "`" + column[7] + "`, " +
+                                                "`" + column[8] + "`, " +
+                                                "`" + column[9] + "`, " +
+                                                "`" + column[10] + "`, " +
+                                                "`" + column[11] + "`, " +
+                                                "`" + column[12] + "`) " +
+                                                "VALUES (" +
+                                                "'" +  group + "', " +
+                                                "'" + cell1 + "', " +
+                                                "'" + cell2 + "', " +
+                                                "'" + cell3 + "', " +
+                                                "'" + cell4 + "', " +
+                                                "'" + cell5 + "', " +
+                                                "'" + cell6 + "', " +
+                                                "'" + cell7 + "', " +
+                                                "'" + cell8 + "', " +
+                                                "'" + cell9 + "', " +
+                                                "'" + cell10 + "', " +
+                                                "'" + cell11 + "', " +
+                                                "'" + cell12 + "');";
+                                        System.out.println(query);
+                                        dbi.getSt().executeUpdate(query);
+                                        dbi.close(main.k);
+                                    } catch (SQLException e1)
+                                    {
+                                        e1.printStackTrace();
+                                    }
+                                } else
+                                {
+                                    try
+                                    {
+                                        dbi = new DBI("databassesabc");
+                                        query = "UPDATE `" + main.getDataBaseDateFormat().format(datePicker.getDate()) + "` " +
+                                                "SET " +
+                                                "`" + column[4] + "` = '" + row.getCell(4).getNumericCellValue() + "', " +
+                                                "`" + column[6] + "` = '" + row.getCell(6).getNumericCellValue() + "', " +
+                                                "`" + column[7] + "` = '" + row.getCell(7).getNumericCellValue() + "', " +
+                                                "`" + column[8] + "` = '" + row.getCell(8).getNumericCellValue() + "', " +
+                                                "`" + column[9] + "` = '" + row.getCell(9).getNumericCellValue() + "', " +
+                                                "`" + column[10] + "` = '" + row.getCell(10).getNumericCellValue() + "', " +
+                                                "`" + column[11] + "` = '" + row.getCell(11).getNumericCellValue() + "' " +
+                                                "WHERE " +
+                                                "`" + column[1] + "` = '" + row.getCell(1).getStringCellValue() + "' " +
+                                                "AND " +
+                                                "`" + column[12] + "` = '" + row.getCell(12).getNumericCellValue() + "';";
+                                        System.out.println(query);
+                                        dbi.getSt().execute(query);
+                                        dbi.close(main.k);
+                                    } catch (SQLException e1) {e1.printStackTrace();}
+                                }
+                            }
+                        } catch (Exception e1) {e1.printStackTrace();}
+                        row = iterator.next();
+                        if (row.getCell(1).getStringCellValue().trim().equals(""))
+                            end = true;
+                    }
                 }
+                JOptionPane.showMessageDialog(main, "Імпорт завершено");
             }
+        }
+    }
+
+    public HSSFWorkbook readWorkbook(String filename)
+    {
+        try
+        {
+            POIFSFileSystem fs = new POIFSFileSystem(new FileInputStream(filename));
+            return new HSSFWorkbook(fs);
+        }
+        catch (Exception e) {
+            return null;
+        }
+    }
+
+    public HSSFWorkbook readShablonWorkbook(String filename)
+    {
+        try
+        {
+            POIFSFileSystem fs = new POIFSFileSystem(getClass().getResourceAsStream("/" + filename));
+            return new HSSFWorkbook(fs);
+        }
+        catch (Exception e) {
+            return null;
         }
     }
 }
